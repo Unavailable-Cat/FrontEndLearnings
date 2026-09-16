@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+}
+.para{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: cadetblue;
+    font-weight: 600;
+}
+.newpara{
+    font-style: italic;
+}

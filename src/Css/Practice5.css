@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    height :50vh;
+    width: 40vw;
+    background-image: url(../images/cat-bottle-wine-bread-white-banner-54595502.webp);
+    background-size: cover;
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    left: 60vw;
+    top:20vh
+}

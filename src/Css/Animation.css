@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+}
+div{
+    width: 200px;
+    height: 200px;
+    
+    justify-self: center;
+    /* align-self: center; */
+    /* background-color: aqua; */
+    animation-name: colorAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes colorAnimation{
+    0%{
+        background-color: violet;
+    }
+    16%{
+        background-color: indigo;
+    }
+    33%{
+        background-color: blue;
+    }
+    50%{
+        background-color: green;
+    }
+    66%{
+        background-color: yellow;
+    }
+    83%{
+        background-color: orange;
+    }
+    100%{
+        background-color: red
+    }
+}

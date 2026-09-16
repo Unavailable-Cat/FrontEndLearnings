@@ -1,0 +1,15 @@
+#box{
+    background-color: chocolate;
+    text-align: start;
+}
+.Heading{
+    color: red;
+    text-align: center;
+    text-decoration: underline;
+}
+button{
+    color: green;
+}
+body{
+    background-color: black;
+}

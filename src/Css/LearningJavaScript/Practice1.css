@@ -1,0 +1,14 @@
+#boxes{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    background-color: rgb(94, 250, 198);
+    color: purple;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    border: 2px black double;
+}

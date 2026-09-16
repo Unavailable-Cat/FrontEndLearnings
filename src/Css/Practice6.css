@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+ul{
+    background-color:rgb(75, 74, 74);
+    color: aqua;
+    display: flex;
+    justify-content: space-around;
+    
+}
+li{
+    list-style-type: none;
+}
+#boxout{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+#boxin{
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    
+}

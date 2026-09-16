@@ -1,0 +1,8 @@
+body{
+    background-color: black;
+    color: rgb(10, 211, 20);
+}
+img{
+    display: inline-block;
+    left:300px;    
+}

@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#050816;
+
+    font-family:'Orbitron', sans-serif;
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+    color:white;
+
+    background-image:
+    radial-gradient(circle at top left, #ff00ff22, transparent 25%),
+    radial-gradient(circle at bottom right, #00ffff22, transparent 25%);
+}
+
+/* MAIN CONTAINER */
+
+.app-container{
+    padding:40px;
+}
+
+/* TYPING EFFECT TITLE */
+
+.main-title{
+
+    width: 11ch;
+
+    margin:0 auto 60px auto;
+
+    font-size:4rem;
+
+    color:#00ffff;
+
+    letter-spacing:6px;
+
+    border-right:4px solid #00ffff;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    animation:
+    typing 3s steps(11) infinite alternate,
+    blink 0.8s step-end infinite;
+
+    text-shadow:
+    0 0 10px #00ffff,
+    0 0 20px #00ffff,
+    0 0 40px #00ffff;
+}
+
+/* CARD LAYOUT */
+
+.card-wrapper{
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
+}
+
+/* CARD */
+
+.dev-card{
+
+    position:relative;
+
+    width:330px;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    backdrop-filter:blur(12px);
+
+    background:rgba(15,15,30,0.55);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    box-shadow:
+    0 0 20px #00ffff33,
+    0 0 40px #ff00ff22;
+
+    transition:0.4s ease;
+}
+
+/* ANIMATED GLOW BORDER */
+
+.glow-border{
+
+    position:absolute;
+
+    inset:-2px;
+
+    background:linear-gradient(
+        45deg,
+        #00ffff,
+        #ff00ff,
+        #00ffff
+    );
+
+    z-index:-1;
+
+    filter:blur(18px);
+
+    animation:rotateGlow 4s linear infinite;
+}
+
+.dev-card:hover{
+
+    transform:
+    translateY(-10px)
+    scale(1.03);
+
+    box-shadow:
+    0 0 30px #00ffff88,
+    0 0 50px #ff00ff88;
+}
+
+/* IMAGE */
+
+.img-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:20px;
+}
+
+.profile-img{
+
+    width:140px;
+    height:140px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:3px solid #ff00ff;
+
+    box-shadow:
+    0 0 15px #ff00ff,
+    0 0 35px #00ffff;
+
+    transition:0.4s;
+}
+
+.profile-img:hover{
+
+    transform:scale(1.08);
+}
+
+/* NAME */
+
+.name{
+
+    text-align:center;
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+
+    color:white;
+
+    text-shadow:
+    0 0 10px #ff00ff;
+}
+
+/* INFO BOX */
+
+.info-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.info-box p{
+
+    background:rgba(0,0,0,0.35);
+
+    border:1px solid #00ffff44;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    box-shadow:
+    0 0 10px #00ffff22;
+
+    transition:0.3s;
+}
+
+.info-box p:hover{
+
+    transform:translateX(5px);
+
+    border-color:#ff00ff;
+}
+
+.info-box span{
+
+    color:#00ffff;
+
+    font-weight:bold;
+}
+
+/* ONLINE OFFLINE DOT */
+
+.status-dot{
+
+    display:inline-block;
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    margin-left:10px;
+}
+
+.online{
+
+    background:#00ff66;
+
+    box-shadow:
+    0 0 10px #00ff66,
+    0 0 20px #00ff66;
+}
+
+.offline{
+
+    background:red;
+
+    box-shadow:
+    0 0 10px red,
+    0 0 20px red;
+}
+
+/* TYPING EFFECT */
+
+@keyframes typing{
+
+    from{
+        width:0;
+    }
+
+    to{
+        width: 13ch;
+    }
+}
+
+/* CURSOR BLINK */
+
+@keyframes blink{
+
+    50%{
+        border-color:transparent;
+    }
+}
+
+/* GLOW ROTATION
+
+@keyframes rotateGlow{
+
+    0%{
+        transform:rotate(0deg);
+    }
+
+    100%{
+        transform:rotate(360deg);
+    }
+} */
